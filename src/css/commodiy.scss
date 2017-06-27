@@ -1,0 +1,111 @@
+@function rem($px){
+  @return $px/50+rem
+}
+.com-list{
+  float: left;
+  width:rem(160);
+  background: #f3f5f7;
+  text-align: center;
+  li{
+    list-style: none;
+    height:rem(60);
+    padding: rem(42) rem(24) rem(24) rem(24);
+    text-align: left;
+    line-height: rem(28);
+    font-size:rem(24);
+    color:#161F28;
+    font-weight:200;
+    border-bottom: 1px solid rgba(7,17,27,0.1);
+    border-right: 1px solid #d9dde1;
+    img{
+      width:rem(24);
+      height:rem(24);
+    }
+  }
+  li:hover{
+    background: white;
+    border-right: 1px solid white;
+  }
+}
+.intro{
+  background: white;
+  .intro-cont{
+    .intro-cont-title{
+      font-size:rem(24);
+      font-weight:700;
+      color:#A2A7AC;
+      height:rem(52);
+      line-height:rem(52);
+      background: #f3f5f7;
+      padding-left: rem(188);
+    }
+    .intro-cont1-list{
+      .intro-cont-list-li:nth-child(1){
+        height:rem(240);
+      }
+      .intro-cont-list-li{
+        margin: 0 rem(36) 0 rem(196);
+        height:rem(188);
+        border-bottom: 1px solid rgba(7,17,27,0.1);
+        .cont-img{
+          float: left;
+          width:rem(150);
+          height:rem(240);
+          img{
+            width:rem(114);
+            height:rem(114);
+            margin-top:rem(36);
+          }
+        }
+        .li-p1{
+          font-size:rem(28);
+          color: rgb(77,85,93);
+          line-height: rem(28);
+          padding-top: rem(40);
+          margin-left: rem(20);
+        }
+        .li-p2{
+          font-size:rem(20);
+          color:rgb(147,153,159);
+          margin-left: rem(20);
+        }
+        .li-div{
+          margin-top: rem(16);
+          .spa1{
+            font-size:rem(28);
+            color: #F01414;
+            font-weight:700;
+          }
+          del{
+            font-size:rem(20);
+            color:rgb(147,153,159)
+          }
+          .li-div-right{
+            float: right;
+            .subtract{
+              width:rem(40);
+              height:rem(40);
+            }
+            .add{
+              width:rem(40);
+              height:rem(40);
+            }
+            .spa2{
+              display: inline-block;
+              width:rem(48);
+              height:rem(40);
+              font-size:rem(20);
+              color:rgb(147,153,159);
+              text-align:center;
+            }
+          }
+        }
+      }
+      .intro-cont-list-li:after{
+        display: block;
+        content: "";
+        clear: both;
+      }
+    }
+  }
+}
