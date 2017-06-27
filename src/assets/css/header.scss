@@ -1,0 +1,114 @@
+@function rem($px){
+  @return $px/50+rem
+}
+#header{
+  height:rem(176);
+  background: rgba(7,17,27,0.5);
+  blur:10px;
+  padding-top: rem(48);
+  .header-img{
+    height:rem(128);
+    width:rem(128);
+    border-radius: 4px;
+    margin-left: rem(48);
+    float: left;
+  }
+  .header-p1{
+    font-size: rem(32);
+    color:rgb(255,255,2550);
+    font-weight: bold;
+    line-height:rem(36);
+    margin-left: rem(208);
+    margin-top: rem(4);
+    img{
+      width:rem(60);
+      height:rem(36);
+      margin-right: rem(12);
+      float: left;
+    }
+  }
+  .header-p2{
+    font-size:rem(24);
+    color:rgb(255,255,2550);
+    font-weight:200;
+    line-height:rem(24);
+    margin-left: rem(208);
+    margin-top: rem(16);
+  }
+  .header-p3{
+    font-size:rem(20);
+    color:rgb(255,255,2550);
+    font-weight:200;
+    line-height: rem(24);
+    height:rem(24);
+    margin-left: rem(208);
+    margin-top: rem(20);
+    img{
+      margin-right: rem(8);
+      float: left;
+      width:rem(24);
+      height:rem(24);
+    }
+  }
+  .manjian{
+    position: absolute;
+    font-size:rem(20);
+    color:rgb(255,255,255);
+    font-weight:200;
+    line-height: rem(24);
+    display: inline-block;
+    padding: rem(14) rem(16);
+    background: rgba(0,0,0,0.2);
+    border-radius: 25px;
+    right:rem(24);
+    top:rem(124);
+  }
+}
+.hot{
+  height:rem(56);
+  font-size:rem(20);
+  color:rgb(255,255,255);
+  font-weight:200;
+  line-height: rem(56);
+  background-color: rgba(7,17,27,0.7);
+  p{
+    //border:1px solid orange;
+    color:rgb(255,255,255);
+    width: rem(500);
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  img{
+    width:rem(44);
+    height:rem(24);
+    margin-left: rem(24);
+    margin-right: rem(8);
+    margin-top: rem(18);
+    float: left;
+  }
+}
+.router-list{
+  height:rem(80);
+  line-height: rem(80);
+  li{
+    float: left;
+    width:33.33%;
+    text-align: center;
+    font-size:rem(28);
+    color: rgb(77,85,93);
+  }
+  li:hover{
+    color:rgb(240,20,20)
+  }
+}
+
+
+
+
+
+
+
+
+
+
